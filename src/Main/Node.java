@@ -6,34 +6,34 @@ package Main;
  */
 public class Node {
     private int value;
-    private Node left, right, up;
+    private Node nodeLeft, nodeRight;
     
     public Node(int value){
         this.value = value;
     }
 
     public int getValue() {
-        return value;
+        return this.value;
     }
 
     public void setValue(int value) {
         this.value = value;
     }
 
-    public Node getLeft() {
-        return left;
+    public Node getNodeLeft() {
+        return this.nodeLeft;
     }
 
-    public void setLeft(Node left) {
-        this.left = left;
+    public void setNodeLeft(Node nodeLeft) {
+        this.nodeLeft = nodeLeft;
     }
 
-    public Node getRight() {
-        return right;
+    public Node getNodeRight() {
+        return this.nodeRight;
     }
 
-    public void setRight(Node right) {
-        this.right = right;
+    public void setNodeRight(Node nodeRight) {
+        this.nodeRight = nodeRight;
     }
     
 }
