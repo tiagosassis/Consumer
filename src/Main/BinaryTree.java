@@ -4,10 +4,10 @@ package Main;
  *
  * @author tiagu
  */
-public class Tree {
+public class BinaryTree {
     Node root;
 
-    public Tree(int value){
+    public BinaryTree(int value){
         this.root = new Node(value);
     }
 
@@ -93,7 +93,7 @@ public class Tree {
         if(root == null)
             return true;
 
-        if((root.getNodeLeft() == null && root.getNodeRight() != null) || (root.getNodeLeft() != null && root.getNodeRight() ==                                      null))
+        if((root.getNodeLeft() == null && root.getNodeRight() != null) || (root.getNodeLeft() != null && root.getNodeRight() ==  null))
             return false;
         
         return isStrictBinaryTree(root.getNodeLeft()) && isStrictBinaryTree(root.getNodeRight());

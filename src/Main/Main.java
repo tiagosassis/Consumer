@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
         int op;
-        Tree tree = new Tree(10);
+        BinaryTree tree = new BinaryTree(10);
 
         do{
             System.out.print("\n\n1 - Insert value \n" +
